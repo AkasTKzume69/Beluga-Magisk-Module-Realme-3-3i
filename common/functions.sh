@@ -106,74 +106,7 @@ prop_process() {
 }
 
 # Credits
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print " "
-ui_print "********************************************"
-ui_print "*        Beluga 3 Gen 1 Realme 3/3i        *"
-ui_print "*         Maintained By AkasTKzume         *"
-ui_print "********************************************"
-sleep 5.0
+# ui_print " "
 
 # Check for min/max api version
 [ -z $MINAPI ] || { [ $API -lt $MINAPI ] && abort "! Your system API of $API is less than the minimum api of $MINAPI! Aborting!"; }
@@ -275,9 +208,9 @@ sleep 3.0
 [ -f "$MODPATH/common/install.sh" ] && . $MODPATH/common/install.sh
 
 ui_print " "
-ui_print "**************************************"
-ui_print "* Installing for $ARCH SDK $API device *"
-ui_print "**************************************"
+ui_print "********************************************"
+ui_print "*    Installing for $ARCH SDK $API device    *"
+ui_print "********************************************"
 # Remove comments from files and place them, add blank line to end if not already present
 for i in $(find $MODPATH -type f -name "*.sh" -o -name "*.prop" -o -name "*.rule"); do
   [ -f $i ] && { sed -i -e "/^#/d" -e "/^ *$/d" $i; [ "$(tail -1 $i)" ] && echo "" >> $i; } || continue
@@ -311,9 +244,9 @@ fi
 
 # Set permissions
 ui_print " "
-ui_print "**************************************"
-ui_print "*        Setting Permissions         *"
-ui_print "**************************************"
+ui_print "********************************************"
+ui_print "*           Setting Permissions            *"
+ui_print "********************************************"
 set_perm_recursive $MODPATH 0 0 0755 0644
 if [ -d $MODPATH/system/vendor ]; then
   set_perm_recursive $MODPATH/system/vendor 0 0 0755 0644 u:object_r:vendor_file:s0
