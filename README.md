@@ -24,9 +24,6 @@
   </h3>
 </div>
 
- <h3><a href="https://t.me/belugarealme3official">Support Group and Discussion</a></h3>
-</div>
-
 <div align="center">
   <!-- Version -->
     <img src="https://img.shields.io/badge/Version-3 Gen 1-blue.svg?longCache=true&style=popout-square"
