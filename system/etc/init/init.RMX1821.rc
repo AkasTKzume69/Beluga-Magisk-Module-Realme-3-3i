@@ -1,0 +1,54 @@
+import /system/etc/init/init.oppo.fingerprints.rc
+import /system/etc/init/init.ago.rc
+on boot
+# USB OTG
+chown system system /sys/class/power_supply/usb/otg_switch
+chmod 0666 /sys/class/power_supply/usb/otg_switch
+# Set proper ownsership for touch panel related stuff
+chown system system /proc/touchpanel/oppo_tp_limit_enable
+chown system system /proc/touchpanel/oppo_tp_limit_area
+chown system system /proc/touchpanel/oppo_tp_direction
+chown system system /proc/touchpanel/tp_fw_update
+# Update touchscreen firmware
+write /proc/touchpanel/tp_fw_update 1
+# Disable edge limit control interface
+write /proc/touchpanel/oppo_tp_limit_enable 0
+# Enable oppo's touchpanel direction
+write /proc/touchpanel/oppo_tp_direction 1
+# Disable edge limit control interface
+write /proc/touchpanel/oppo_tp_limit_enable 0
+on init
+mount none /vendor/lost+found /vendor/overlay bind
+on init   
+# Force disable ViLTE support
+setprop persist.vendor.vilte_support 0
+on post-fs
+# Disable OEM Lights
+mount none /dev/null vendor/lib/hw/lights.mt6771.so bind
+mount none /dev/null vendor/lib/hw/android.hardware.light@2.0-impl-mediatek.so bind
+mount none /dev/null vendor/bin/hw/android.hardware.light@2.0-service-mediatek bind
+mount none /dev/null vendor/lib64/hw/lights.mt6771.so bind
+mount none /dev/null vendor/lib64/hw/android.hardware.light@2.0-impl-mediatek.so bind
+mount none /dev/null vendor/etc/init/android.hardware.light@2.0-service-mediatek.rc bind
+# Override stock audio_policy_configuration.xml
+mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
+# Bind mount libdpframework
+mount none /system/lib/libdpframework.so /vendor/lib/libdpframework.so bind
+mount none /system/lib64/libdpframework.so /vendor/lib64/libdpframework.so bind
+# Unmount the overridden fstab because the SELinux label is incorrect and some MTK daemons can crash because of that (at post-fs, the fstab has already been used to mount the partitions, so it is fine to just revert back)
+umount /vendor/etc/fstab.mt6771
+on property:sys.boot_completed=1
+chown root root /sys/module/ged/parameters/gx_force_cpu_boost
+chown root root /proc/cpufreq/cpufreq_power_mode
+chown root root /proc/cpufreq/cpufreq_cci_mode
+# DT2W
+on property:persist.sys.dt2w=0
+write /proc/touchpanel/double_tap_enable 0
+on property:persist.sys.dt2w=1
+write /proc/touchpanel/double_tap_enable 1
+
+service charger /bin/chargeonlymode
+class charger
+critical
+seclabel u:r:charger:s0
+group system graphics
