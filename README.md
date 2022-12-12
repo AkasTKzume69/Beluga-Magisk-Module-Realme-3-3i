@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://github.com/AkasTKzume69/Beluga-Magisk-Module-Realme-3-3i/changelog.md">
+    <a href="https://github.com/AkasTKzume69/Beluga-Magisk-Module-Realme-3-3i/blob/master/changelog.md">
       Changelog
     </a>
     <span> | </span>
-    <a href="https://github.com/AkasTKzume69/Beluga-Magisk-Module-Realme-3-3i/installation.md">
+    <a href="https://github.com/AkasTKzume69/Beluga-Magisk-Module-Realme-3-3i/blob/master/installation.md">
       Installation and Guide
     </a>
     <span> | </span>
