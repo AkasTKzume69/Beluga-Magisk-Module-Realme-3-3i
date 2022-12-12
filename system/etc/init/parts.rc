@@ -1,0 +1,34 @@
+on boot
+# USB OTG
+chown system system /sys/class/power_supply/usb/otg_switch
+# CABC
+chown system system /sys/kernel/oppo_display/LCM_CABC
+chmod 0644 /sys/kernel/oppo_display/LCM_CABC
+# Touchpanel
+chown system system /proc/touchpanel/oppo_tp_limit_enable
+chown system system /proc/touchpanel/oplus_tp_direction
+chown system system /proc/touchpanel/game_switch_enable
+# CABC off
+on property:persist.cabc_profile=0
+write /sys/kernel/oppo_display/LCM_CABC 0
+# CABC on
+on property:persist.cabc_profile=1
+write /sys/kernel/oppo_display/LCM_CABC 1
+# CABC balanced
+on property:persist.cabc_profile=2
+write /sys/kernel/oppo_display/LCM_CABC 2
+# CABC aggressive
+on property:persist.cabc_profile=3
+write /sys/kernel/oppo_display/LCM_CABC 3
+# Vibration Strength
+on property:persist.vib_strength=*
+    write /sys/class/leds/vibrator/vmax ${persist.vib_strength}
+# Power Saving Mode
+on property:persist.perf_profile=1
+exec - root -- /system/bin/perf_profile.sh 1
+# Balanced Mode
+on property:persist.perf_profile=0
+exec - root -- /system/bin/perf_profile.sh 0
+# Performance Mode
+on property:persist.perf_profile=2
+exec - root -- /system/bin/perf_profile.sh 2
