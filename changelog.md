@@ -1,51 +1,117 @@
-### v2.0 - 1.29.2022
-* Update for magisk 24
-  * Added zygisk module support
-* Misc fixes
+# V3 12.03.2022
+- Introduced GED Modules of Realme 3
+- Enabled GED Boost Amp
+- Enabled GED Boost Extra
+- Enabled GED Boost GPU
+- Enabled GED Boost CPU
+- Enabled GED Self game force detect
+- Increased GED CPU idle
+- Increased GED CPU Boost Policy
+- Disabled GED Force MDP
+- Enabled GED boost
+- Increased Smart GED boost
+- Enabled GED GX force mode
+- Enabled GED GX boost
+- Enabled CPU CCI mode
+- Added Refresh Rate Config
+- Dropped Enable Camera HAL 3 (found issue for third party camera like TrCamera)
+- Dropped Reduced Read a head and NR requests to 128kb
+- Fix Beluga Touch Booster on init.d
 
-### v1.8 - 11.21.2021
-* Fix for magisk canary
-* Minimum magisk version now 20.4
+# V2 11.20.2022
+```On Source```
+* Fix some props and services
+* Added sepolicy.sh
+* Added Thermal Config for apps and games
+* Dropped Lock GPU Frequency to 800Mhz due to causing battery draining and overheating
 
-### v1.7 - 9.9.2021
-* Small fix for magisk canary
+```On System```
+* Introduced Beluga Performance, Beluga Touch, Tune2fs Binaries
+* Introduced Beluga Touch Booster and System Thermal Config
+* Introduced Thermal Libs, Thermal Engine, and Beluga Extentions
 
-### v1.6 - 9.12.2020
-* Updates for latest magisk - minmagisk is 20 now
-* Added back ro.build.product to device_check for older roms
-* Moved credits so it'll work with latest magisk mod template
+```On Props```
+* Increased LCD Density to 460
+* Enabled DFPS and Smart DFPS
+* Enabled Camera HAL3
+* Enabled EPDG Support
+* Switched Dalvik Lib2 to Libart.so
+* Disabled Thermal by props
+* Improve Touch Tweaks (For better Responsiveness and Speed)
+* Enabled Zygote Preload
+* Enabled Quickstart Support
+* Improved Gaming Experience
+* Disabled Background Blurr
+* Improved RAM Management
+* Enabled Low RAM Tweaks
+* Enabled Memory Properties
+* Added Dalvik Virtual Machine Tweaks
+* Added Video Acceleration and improved streaming
+* Reduced Wifi scanning rate to 180
+* Enabled Render UI with GPU
+* Disabled Automatic error reports, error profiler, strict mode checking
+* Disabled Sending usage data to google
+* Disabled Locating
+* Disabled Vsync and CPU Vsync
+* Disabled Logcat
+* Many under the hood added and changes
 
-### v1.5 - 3.27.2020
-* Have debug log be part of regular log, remove superfluous stuff, module dev can just add what they want
-* Removed addon runtime confusion - all scripts are install.sh now
-* Added manufacturer option to device_check
-* Fixes for Magisk 20.4
+```On Service```
+* Stopped LogD, ThermalD, PerfD
+* FSTrim Cache, System, Data
+* Switched CPU Mode to Sports Mode
+* Enabled Oppo TP Direction
+* Disabled Oppo TP Limit
+* Disabled CABC
+* Disabled CCCI Debug
+* Enabled GED GX Game Mode
+* Enabled GED GX Force CPU Boost
+* Switched HMP to EAS
+* Increased Schedutil Downrate Limit
+* Disabled Schedutil Uprate Limit
+* Disabled CPU Background
+* Reduced CPU System Background and Restricted
+* Switched IRQ Affinity to Silvee Cluster
+* Reduced Read a head and NR requests to 128kb
+* Switched Scheduler to CFQ
+* Block I/O Cgroups Tweaks
+* Thermal Threshold temperature to 60
+* Disabled CPU notify on migrate
+* Enabled CPU Boost
+* Added I/O Scheduler Tweaks
+* Added KSM Tweaks
+* Increased Dalvik Virtual Machine heap minimum free to 2m
+* Added Google Tweaks
+* Enabled DFPS and Smart DFPS
+* Enabled Power HAL Sports Mode
+* Many under the hood added and changes
 
-### v1.4 - 2.20.2020
-* Add more vendor perms
-* Fixed uninstall.sh script install behavior - it'll install if there's files outside of modpath or if there's custom logic at the top of it
-* Misc bug fixes
+```Game List of Added Thermal Config and Power HAL (Sport Mode)```
+* Call of Duty Mobile (Garena and Activision)
+* PUBG (All Regions)
+* Mobile Legends Bang Bang
+* League of Legends Wildrift
+* Genshin Impact
+* Sausage Man
+* Freefire (All Regions)
+* Roblox
 
-### v1.3 - 1.22.2020
-* Move debug log to same location as magisk log - Download folder
-* Add proper chcon for vendor files - fixes various issues with audioflinger and maybe more with android Q
-* Remove empty folders after moving files for DYNLIB
-* Fix api check bug
+```App List of Added Thermal Config and Power HAL (Sport Mode)```
+* Google Chrome
+* Google Classroom
+* Google Docs
+* Google Drive
+* Google Gmail
+* Google Keep
+* Google Meet
+* Google Play Store
+* YouTube
+* TrCamera
+* Instagram
+* Facebook
+* Messenger
+* Telegram
+* TikTok
 
-### v1.2 - 1.17.2020
-* Fixed bug in debug log
-* Fixed DYNLIB so it won't move empty files (replacements) to vendor
-* Magisk manager only installs now - will automatically remove module if flashed in recovery
-* Removed extra crap that was needed for recovery installs
-* Removed common/uninstall and upgrade scripts, no need for them anymore
-* Removed mount_part function - no need for it now since recovery is no longer supported - just remount partition as rw
-* More in line with regular magisk module template now - flashing zip always installs/upgrades mod. To uninstall, use magisk manager
-
-### v1.1 - 1.11.2020
-* No longer use .core - it'll be deprecated soon
-* Fix for uninstall
-* Fix bug in debug function during uninstalls
-* Misc fixes
-
-### v1.0 - 1.4.2020
-* Initial release
+# V1 11.08.2022
+* Initial Release
