@@ -110,7 +110,7 @@ ui_print "**************************************"
 ui_print "*     Beluga 3 Gen 1 Realme 3/3i     *"
 ui_print "*      Maintained By AkasTKzume      *"
 ui_print "**************************************"
-ui_print " "
+sleep 5.0
 
 # Check for min/max api version
 [ -z $MINAPI ] || { [ $API -lt $MINAPI ] && abort "! Your system API of $API is less than the minimum api of $MINAPI! Aborting!"; }
@@ -178,6 +178,7 @@ if [ -f $INFO ]; then
   rm -f $INFO
 fi
 
+sleep 2.0
 ### Install
 ui_print "**************************************"
 ui_print "*         Installing Beluga          *"
