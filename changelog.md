@@ -1,4 +1,4 @@
-# V3 12.03.2022
+# V3-12.03.2022
 - Introduced GED Modules of Realme 3
 - Enabled GED Boost Amp
 - Enabled GED Boost Extra
@@ -18,7 +18,7 @@
 - Dropped Reduced Read a head and NR requests to 128kb
 - Fix Beluga Touch Booster on init.d
 
-# V2 11.20.2022
+# V2-11.20.2022
 ```On Source```
 * Fix some props and services
 * Added sepolicy.sh
@@ -113,5 +113,5 @@
 * Telegram
 * TikTok
 
-# V1 11.08.2022
+# V1-11.08.2022
 * Initial Release
