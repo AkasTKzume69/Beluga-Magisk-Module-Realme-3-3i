@@ -169,10 +169,10 @@ ui_print " "
 ui_print " "
 ui_print " "
 ui_print " "
-ui_print "**************************************"
-ui_print "*     Beluga 3 Gen 1 Realme 3/3i     *"
-ui_print "*      Maintained By AkasTKzume      *"
-ui_print "**************************************"
+ui_print "********************************************"
+ui_print "*        Beluga 3 Gen 1 Realme 3/3i        *"
+ui_print "*         Maintained By AkasTKzume         *"
+ui_print "********************************************"
 sleep 5.0
 
 # Check for min/max api version
@@ -206,9 +206,9 @@ fi
 
 # Extract files
 ui_print " "
-ui_print "**************************************"
-ui_print "*          Preparing Files           *"
-ui_print "**************************************"
+ui_print "********************************************"
+ui_print "*             Preparing Files              *"
+ui_print "********************************************"
 unzip -o "$ZIPFILE" -x 'META-INF/*' 'common/functions.sh' -d $MODPATH >&2
 [ -f "$MODPATH/common/addon.tar.xz" ] && tar -xf $MODPATH/common/addon.tar.xz -C $MODPATH/common 2>/dev/null
 
@@ -222,7 +222,10 @@ if [ "$(ls -A $MODPATH/common/addon/*/install.sh 2>/dev/null)" ]; then
 fi
 
 # Remove files outside of module directory
-ui_print "- Removing old files"
+ui_print " "
+ui_print "********************************************"
+ui_print "*            Removing Old Files            *"
+ui_print "********************************************"
 
 if [ -f $INFO ]; then
   while read LINE; do
@@ -243,39 +246,38 @@ fi
 
 sleep 2.0
 ### Install
-ui_print "**************************************"
-ui_print "*         Installing Beluga          *"
-ui_print "**************************************"
+ui_print " "
+ui_print "********************************************"
+ui_print "*            Installing Beluga             *"
+ui_print "********************************************"
 sleep 5.0
 ui_print " "
-ui_print "**************************************"
-ui_print "*    Patching Performance Profile    *"
-ui_print "**************************************"
+ui_print "********************************************"
+ui_print "*       Patching Performance Profile       *"
+ui_print "********************************************"
 sleep 4.0
 ui_print " "
-ui_print "**************************************"
-ui_print "*         Patching Power HAL         *"
-ui_print "**************************************"
+ui_print "********************************************"
+ui_print "*            Patching Power HAL            *"
+ui_print "********************************************"
 sleep 1.0
 ui_print " "
-ui_print "**************************************"
-ui_print "*        Adding Beluga Props         *"
-ui_print "**************************************"
+ui_print "********************************************"
+ui_print "*           Adding Beluga Props            *"
+ui_print "********************************************"
 sleep 2.0
 ui_print " "
-ui_print "**************************************"
-ui_print "*       Adding Beluga Services       *"
-ui_print "**************************************"
-sleep 3.0
-ui_print ""
-ui_print "**************************************"
-ui_print "*      Succeeded (1) | Error (0)     *"
-ui_print "**************************************"
+ui_print "********************************************"
+ui_print "*          Adding Beluga Services          *"
+ui_print "********************************************"
 sleep 3.0
 
 [ -f "$MODPATH/common/install.sh" ] && . $MODPATH/common/install.sh
 
-ui_print "   Installing for $ARCH SDK $API device..."
+ui_print " "
+ui_print "**************************************"
+ui_print "* Installing for $ARCH SDK $API device *"
+ui_print "**************************************"
 # Remove comments from files and place them, add blank line to end if not already present
 for i in $(find $MODPATH -type f -name "*.sh" -o -name "*.prop" -o -name "*.rule"); do
   [ -f $i ] && { sed -i -e "/^#/d" -e "/^ *$/d" $i; [ "$(tail -1 $i)" ] && echo "" >> $i; } || continue
@@ -322,6 +324,11 @@ if [ -d $MODPATH/system/vendor ]; then
     [ -f $FILE ] && chcon u:object_r:vendor_app_file:s0 $FILE
   done
 fi
+ui_print " "
+ui_print "********************************************"
+ui_print "*         Succeeded (1) | Error (0)        *"
+ui_print "********************************************"
+sleep 3.0
 set_permissions
 
 # Complete install
