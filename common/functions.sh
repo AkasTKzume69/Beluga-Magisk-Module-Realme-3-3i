@@ -141,16 +141,11 @@ if ! $BOOTMODE; then
   exit 0
 fi
 
-# Debug
-if $DEBUG; then
-  ui_print "- Debug mode"
-  ui_print "  Module install log will include debug info"
-  ui_print "  Be sure to save it after module install"
-  set -x
-fi
-
 # Extract files
-ui_print "- Extracting module files"
+ui_print " "
+ui_print "**************************************"
+ui_print "*          Preparing Files           *"
+ui_print "**************************************"
 unzip -o "$ZIPFILE" -x 'META-INF/*' 'common/functions.sh' -d $MODPATH >&2
 [ -f "$MODPATH/common/addon.tar.xz" ] && tar -xf $MODPATH/common/addon.tar.xz -C $MODPATH/common 2>/dev/null
 
@@ -185,12 +180,9 @@ fi
 
 ### Install
 ui_print "**************************************"
-ui_print "*          Preparing Files           *"
-ui_print "**************************************"
-sleep 5.0
 ui_print "*         Installing Beluga          *"
 ui_print "**************************************"
-sleep 2.0
+sleep 5.0
 ui_print " "
 ui_print "**************************************"
 ui_print "*    Patching Performance Profile    *"
