@@ -107,7 +107,8 @@ prop_process() {
 
 # Credits
 ui_print "**************************************"
-ui_print "*   MMT Extended by Zackptg5 @ XDA   *"
+ui_print "*     Beluga 3 Gen 1 Realme 3/3i     *"
+ui_print "*      Maintained By AkasTKzume      *"
 ui_print "**************************************"
 ui_print " "
 
@@ -183,7 +184,32 @@ if [ -f $INFO ]; then
 fi
 
 ### Install
-ui_print "- Installing"
+ui_print "**************************************"
+ui_print "*          Preparing Files           *"
+ui_print "**************************************"
+sleep 5.0
+ui_print "*         Installing Beluga          *"
+ui_print "**************************************"
+sleep 2.0
+ui_print " "
+ui_print "**************************************"
+ui_print "*    Patching Performance Profile    *"
+ui_print "**************************************"
+sleep 3.0
+ui_print " "
+ui_print "**************************************"
+ui_print "*         Patching Power HAL         *"
+ui_print "**************************************"
+sleep 3.0
+ui_print " "
+ui_print "**************************************"
+ui_print "*        Adding Beluga Props         *"
+ui_print "**************************************"
+sleep 3.0
+ui_print " "
+ui_print "**************************************"
+ui_print "*       Adding Beluga Services       *"
+ui_print "**************************************"
 
 [ -f "$MODPATH/common/install.sh" ] && . $MODPATH/common/install.sh
 
@@ -221,7 +247,9 @@ fi
 
 # Set permissions
 ui_print " "
-ui_print "- Setting Permissions"
+ui_print "**************************************"
+ui_print "*        Setting Permissions         *"
+ui_print "**************************************"
 set_perm_recursive $MODPATH 0 0 0755 0644
 if [ -d $MODPATH/system/vendor ]; then
   set_perm_recursive $MODPATH/system/vendor 0 0 0755 0644 u:object_r:vendor_file:s0
