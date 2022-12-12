@@ -1,7 +1,7 @@
-id=MMT-Ex
-name=Magisk Module Template Extended
-version=v2.0
-versionCode=10
-author=Zackptg5
-description=Magisk Module Template Extended
+id=Beluga
+name=Beluga 3 Gen 1 Realme 3/3i
+version=v3.12132022
+versionCode=3
+author=AkasTKzume
+description=Join t.me/belugarealme3official
 updateJson=https://raw.githubusercontent.com/Zackptg5/MMT-Extended/master/update.json
