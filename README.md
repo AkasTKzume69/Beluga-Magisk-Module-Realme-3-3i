@@ -22,7 +22,7 @@
     </a>
     <span> | </span>
     <a href="https://github.com/AkasTKzume69/Beluga-Magisk-Module-Realme-3-3i/installation.md">
-      Installation
+      Installation and Guide
     </a>
     <span> | </span>
     <a href="https://github.com/AkasTKzume69/Beluga-Magisk-Module-Realme-3-3i/">
