@@ -14,7 +14,7 @@
       Installation and Guide
     </a>
     <span> | </span>
-    <a href="https://github.com/AkasTKzume69/Beluga-Magisk-Module-Realme-3-3i/">
+    <a href="https://sourceforge.net/projects/akastkzume-files/files/Beluga%20Magisk%20Module%20Realme%203-3i/">
       Download
     </a>
     <span> | </span>
