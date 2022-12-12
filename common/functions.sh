@@ -187,21 +187,27 @@ ui_print " "
 ui_print "**************************************"
 ui_print "*    Patching Performance Profile    *"
 ui_print "**************************************"
-sleep 3.0
+sleep 4.0
 ui_print " "
 ui_print "**************************************"
 ui_print "*         Patching Power HAL         *"
 ui_print "**************************************"
-sleep 3.0
+sleep 1.0
 ui_print " "
 ui_print "**************************************"
 ui_print "*        Adding Beluga Props         *"
 ui_print "**************************************"
-sleep 3.0
+sleep 2.0
 ui_print " "
 ui_print "**************************************"
 ui_print "*       Adding Beluga Services       *"
 ui_print "**************************************"
+sleep 3.0
+ui_print ""
+ui_print "**************************************"
+ui_print "*      Succeeded (1) | Error (0)     *"
+ui_print "**************************************"
+sleep 3.0
 
 [ -f "$MODPATH/common/install.sh" ] && . $MODPATH/common/install.sh
 
