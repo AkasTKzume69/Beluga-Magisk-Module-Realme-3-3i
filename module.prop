@@ -1,7 +1,7 @@
-id=Beluga Magisk Module
+id=Beluga
 name=Beluga Magisk Module Realme 3/3i
 version=v3.12132022
 versionCode=3.1
 author=AkasTKzume
 description=Join t.me/belugarealme3official
-updateJson=https://raw.githubusercontent.com/Zackptg5/MMT-Extended/master/update.json
+updateJson=https://raw.githubusercontent.com/AkasTKzume69/Beluga-Magisk-Module-Realme-3-3i/master/update.json
