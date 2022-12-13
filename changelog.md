@@ -1,7 +1,7 @@
 # 3 Gen 1-12.13.2022
 * Nuked all tweaks, props, scripts, thermal, binary tweaks etc (Very Unstable).
 * Introduced new MMT Extended Script thanks to Zackptg5.
-* Patched Realme Settings Performance Profile execution (You can now Beluga in 3 modes).
+* Patched Realme Settings Performance Profile execution (You can now use Beluga in 3 modes).
 * Introduced new README.md homepage style.
 * Introduced new installation style.
 * Introduced new UpdateJSON Magisk OTA update, You can now update through Magisk Manager (Only Magisk Version V24 and higher).
