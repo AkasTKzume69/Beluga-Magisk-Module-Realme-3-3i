@@ -1,22 +1,25 @@
+# V4-12.13.2022
+* Testing
+
 # V3-12.03.2022
-- Introduced GED Modules of Realme 3
-- Enabled GED Boost Amp
-- Enabled GED Boost Extra
-- Enabled GED Boost GPU
-- Enabled GED Boost CPU
-- Enabled GED Self game force detect
-- Increased GED CPU idle
-- Increased GED CPU Boost Policy
-- Disabled GED Force MDP
-- Enabled GED boost
-- Increased Smart GED boost
-- Enabled GED GX force mode
-- Enabled GED GX boost
-- Enabled CPU CCI mode
-- Added Refresh Rate Config
-- Dropped Enable Camera HAL 3 (found issue for third party camera like TrCamera)
-- Dropped Reduced Read a head and NR requests to 128kb
-- Fix Beluga Touch Booster on init.d
+* Introduced GED Modules of Realme 3
+* Enabled GED Boost Amp
+* Enabled GED Boost Extra
+* Enabled GED Boost GPU
+* Enabled GED Boost CPU
+* Enabled GED Self game force detect
+* Increased GED CPU idle
+* Increased GED CPU Boost Policy
+* Disabled GED Force MDP
+* Enabled GED boost
+* Increased Smart GED boost
+* Enabled GED GX force mode
+* Enabled GED GX boost
+* Enabled CPU CCI mode
+* Added Refresh Rate Config
+* Dropped Enable Camera HAL 3 (found issue for third party camera like TrCamera)
+* Dropped Reduced Read a head and NR requests to 128kb
+* Fix Beluga Touch Booster on init.d
 
 # V2-11.20.2022
 ```On Source```
