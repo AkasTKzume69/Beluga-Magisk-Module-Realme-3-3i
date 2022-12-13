@@ -26,11 +26,11 @@
 
 <div align="center">
   <!-- Latest Version -->
-    <img src="https://img.shields.io/badge/Latest Version-3 Gen 1-green.svg?longCache=true&style=popout-square"
+    <img src="https://img.shields.io/badge/Latest Version-3 Gen 1-green.svg?longCache=true&style=For-The-Badge"
       alt="Version" />
   <!-- Last Updated -->
-    <img src="https://img.shields.io/badge/Last Updated-December 13, 2022-blue.svg?longCache=true&style=flat-square"
+    <img src="https://img.shields.io/badge/Last Updated-December 13, 2022-blue.svg?longCache=true&style=For-The-Badge"
       alt="_time_stamp_" />
   <!-- Minimum Magisk Version -->
-    <img src="https://img.shields.io/badge/Minimum Magisk Version-23-red.svg?longCache=true&style=flat-square"
+    <img src="https://img.shields.io/badge/Minimum Magisk Version-23-red.svg?longCache=true&style=For-The-Badge"
       alt="_time_stamp_" /></div>
