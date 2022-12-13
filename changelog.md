@@ -121,5 +121,5 @@
 * Telegram
 * TikTok
 
-# V1-11.08.2022
+# V1 11082022
 * Initial Release
