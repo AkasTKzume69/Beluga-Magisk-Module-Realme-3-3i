@@ -34,18 +34,13 @@
 * Fix Beluga Touch Booster on init.d
 
 # V2-11.20.2022
-```On Source```
 * Fix some props and services
 * Added sepolicy.sh
 * Added Thermal Config for apps and games
 * Dropped Lock GPU Frequency to 800Mhz due to causing battery draining and overheating
-
-```On System```
 * Introduced Beluga Performance, Beluga Touch, Tune2fs Binaries
 * Introduced Beluga Touch Booster and System Thermal Config
 * Introduced Thermal Libs, Thermal Engine, and Beluga Extentions
-
-```On Props```
 * Increased LCD Density to 460
 * Enabled DFPS and Smart DFPS
 * Enabled Camera HAL3
@@ -70,8 +65,6 @@
 * Disabled Vsync and CPU Vsync
 * Disabled Logcat
 * Many under the hood added and changes
-
-```On Service```
 * Stopped LogD, ThermalD, PerfD
 * FSTrim Cache, System, Data
 * Switched CPU Mode to Sports Mode
