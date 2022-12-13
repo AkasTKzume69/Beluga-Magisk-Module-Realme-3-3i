@@ -1,5 +1,15 @@
-# V4-12.13.2022
-* Testing
+# 3 Gen 1-12.13.2022
+* Nuked all tweaks, props, scripts, thermal, binary tweaks etc (Very Unstable).
+* Introduced new MMT Extended Script thanks to Zackptg5.
+* Patched Realme Settings Performance Profile execution (You can now Beluga in 3 modes).
+* Introduced new README.md homepage style.
+* Introduced new UpdateJSON Magisk OTA update, You can now update through Magisk Manager (Only Magisk Version V24 and higher).
+* Introduced All Realme 3 GED Modules.
+* Introduced GNU General Public License v3.0.
+* Added .gitattributes and .gitignore
+* Improved Power Saving, Balanced, Performance Profiles.
+* Fixed double execute on parts.rc and init.RMX1821.rc.
+* Cleaned perf_profile.sh, parts.rc, init.RMX1821.rc.
 
 # V3-12.03.2022
 * Introduced GED Modules of Realme 3
