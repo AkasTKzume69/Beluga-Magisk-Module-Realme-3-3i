@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <strong>This module improve and enhance your gaming experience including CPU, GPU, Touch Responsiveness, Kernel Tweaks, Google Tweaks, System Tweaks, Dalvik Tweaks, and more🙂
+  <strong>This module improve and enhance your gaming experience including CPU, GPU, Touch Tweaks, Kernel Tweaks, Google Tweaks, System Tweaks, Dalvik Tweaks, and more🙂
 
 <div align="center">
   <h3>
