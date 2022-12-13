@@ -3,6 +3,7 @@
 * Introduced new MMT Extended Script thanks to Zackptg5.
 * Patched Realme Settings Performance Profile execution (You can now Beluga in 3 modes).
 * Introduced new README.md homepage style.
+* Introduced new installation style.
 * Introduced new UpdateJSON Magisk OTA update, You can now update through Magisk Manager (Only Magisk Version V24 and higher).
 * Introduced All Realme 3 GED Modules.
 * Introduced GNU General Public License v3.0.
