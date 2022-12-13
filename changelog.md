@@ -1,4 +1,4 @@
-# 3 Gen 1-12.13.2022
+# 3 Gen 1 12132022
 * Nuked all tweaks, props, scripts, thermal, binary tweaks etc (Very Unstable).
 * Introduced new MMT Extended Script thanks to Zackptg5.
 * Patched Realme Settings Performance Profile execution (You can now use Beluga in 3 modes).
@@ -13,7 +13,7 @@
 * Cleaned perf_profile.sh, parts.rc, init.RMX1821.rc.
 * Many under the hood changes.
 
-# V3-12.03.2022
+# V3 12032022
 * Introduced GED Modules of Realme 3
 * Enabled GED Boost Amp
 * Enabled GED Boost Extra
@@ -33,7 +33,7 @@
 * Dropped Reduced Read a head and NR requests to 128kb
 * Fix Beluga Touch Booster on init.d
 
-# V2-11.20.2022
+# V2 11202022
 * Fix some props and services
 * Added sepolicy.sh
 * Added Thermal Config for apps and games
