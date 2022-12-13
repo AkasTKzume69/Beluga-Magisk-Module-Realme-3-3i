@@ -181,7 +181,7 @@ sleep 2.0
 ### Install
 ui_print " "
 ui_print "********************************************"
-ui_print "*            Installing Beluga             *"
+ui_print "*         Installing Beluga Files          *"
 ui_print "********************************************"
 sleep 5.0
 ui_print " "
