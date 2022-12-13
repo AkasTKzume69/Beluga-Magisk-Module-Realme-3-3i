@@ -10,6 +10,7 @@
 * Improved Power Saving, Balanced, Performance Profiles.
 * Fixed double execute on parts.rc and init.RMX1821.rc.
 * Cleaned perf_profile.sh, parts.rc, init.RMX1821.rc.
+* Many under the hood changes.
 
 # V3-12.03.2022
 * Introduced GED Modules of Realme 3
