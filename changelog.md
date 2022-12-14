@@ -1,3 +1,10 @@
+# 3 Gen 2 12142022
+* Nuked README.md in zip file to reduce file size.
+* Introduced new service.sh.
+* Introduced new Power HAL Smart.
+* Added Mobile Legends Bang Bang Power HAL.
+* Added Google Tweaks.
+
 # 3 Gen 1 12132022
 * Nuked all tweaks, props, scripts, thermal, binary tweaks etc (Very Unstable).
 * Introduced new MMT Extended Script thanks to Zackptg5.
