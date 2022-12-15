@@ -1,4 +1,4 @@
-# 3 Gen 4 12152022
+# 3 Gen 3 12152022
 * Fixed module.prop on previous version (3 Gen 2 12142022)
 * Nuked .gitattributes .gitignore in zip file to reduce file size.
 
