@@ -1,3 +1,8 @@
+# 3 Gen 4 12172022
+* Introduced Realme Settings Patch (For older Realme Settings version).
+* Introduced new UpdateGMPJSON for Magisk OTA update, You can now update through Magisk Manager (Only Magisk V24 or and higher).
+* Added more Realme 3 GED Modules.
+
 # 3 Gen 3 12152022
 * Fixed module.prop on previous version (3 Gen 2 12142022)
 * Nuked .gitattributes .gitignore in zip file to reduce file size.
