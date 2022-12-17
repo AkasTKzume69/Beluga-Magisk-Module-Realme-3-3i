@@ -26,7 +26,7 @@
 
 <div align="center">
   <!-- Latest Version -->
-    <img src="https://img.shields.io/badge/Latest Version-3 Gen 3-green.svg?longCache=true&style=For-The-Badge"
+    <img src="https://img.shields.io/badge/Latest Version-3 Gen 4-green.svg?longCache=true&style=For-The-Badge"
       alt="Version" />
   <!-- Last Updated -->
     <img src="https://img.shields.io/badge/Last Updated-December 14, 2022-blue.svg?longCache=true&style=For-The-Badge"
